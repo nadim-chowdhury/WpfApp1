@@ -23,6 +23,13 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            //myButton.FontSize = 12;
+            //myButton.Content = "Lieo";
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
         }
     }
 }

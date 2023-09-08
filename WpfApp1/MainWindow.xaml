@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="NadimChowdhury" Height="450" Width="800">
     <StackPanel>
-        <Label>Hello World!</Label>
-        <Button>Like</Button>
+        <TextBlock>Hello <Bold>World!</Bold> Goto to my 
+      <Hyperlink NavigateUri="https://nadim.vercel.app" RequestNavigate="Hyperlink_RequestNavigate">portfolio</Hyperlink></TextBlock>
+      
+            <!--<Button x:Name="myButton" Content="Click Here"></Button>-->
+
+        <TextBlock TextWrapping="Wrap" Foreground="ForestGreen">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</TextBlock>
     </StackPanel>
 </Window>
