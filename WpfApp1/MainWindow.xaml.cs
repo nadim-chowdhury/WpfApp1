@@ -25,6 +25,18 @@ namespace WpfApp1
             InitializeComponent();
             //myButton.FontSize = 12;
             //myButton.Content = "Lieo";
+
+            TextBlock myTB = new TextBlock();
+            myTB.Text = "Hello Lieo";
+            this.Content = myTB;
+            myTB.Inlines.Add(" Inline data is cool");
+            myTB.TextWrapping = TextWrapping.Wrap;
+
+            myTB.Inlines.Add(new Run(" Lorem ipsum donor omg lol nrt how cool")
+            {
+                Foreground = Brushes.Red,
+                TextDecorations = TextDecorations.Strikethrough,
+            });
         }
 
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
@@ -33,3 +45,4 @@ namespace WpfApp1
         }
     }
 }
+    
